@@ -1,3 +1,18 @@
+:root {
+    --font-sans-serif: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,'Helvetica Neue', sans-serif;
+    --black: #000000;
+    --darkgray: #231f20; 
+    --white: #ffffff; 
+    --blue: #008edb; 
+    --red: #e70000; 
+    --ltgray: #e9ecef; 
+    --brown: #8a6e4b; 
+    --beige: #f1efd9; 
+    --pink: #eb80a8; 
+    --dkgray: #495057;
+}
+
+
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
     box-sizing: border-box;
@@ -5,6 +20,21 @@ html {
   *, *:before, *:after {
     box-sizing: inherit;
   }
+
+  body {
+      font-family: var(--font-sans-serif);
+      color: var(--darkgray);
+  }
+
+  .hero {
+      font-family: var(--font-sans-serif);
+      font-weight: 600;
+      font-size: 1.2rem; 
+      background: var(--pink); 
+      color: var(--white); 
+      line-height: 1.7; 
+  }
+
 
 
 img {
