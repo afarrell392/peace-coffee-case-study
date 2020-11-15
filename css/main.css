@@ -21,22 +21,65 @@ html {
     box-sizing: inherit;
   }
 
+  /** typography **/
+
   body {
       font-family: var(--font-sans-serif);
       color: var(--darkgray);
+      margin: 20px; 
   }
 
-  .hero {
+  h1, h2, h4 {
       font-family: var(--font-sans-serif);
-      font-weight: 600;
-      font-size: 1.2rem; 
-      background: var(--pink); 
-      color: var(--white); 
-      line-height: 1.7; 
+      color: white;    
+      font-weight: 700;
+      background: orange; 
   }
 
+  h1 {
+      line-height: 1.2;
+      font-size: 3rem;  
+  }
 
+  h2 {
+    line-height: 1;
+    font-size: 1.75rem;  
+    
+}
+h4 {
+    line-height: 1; 
+    font-size: 2rem; 
+}
+
+.heading_black {
+    color: black; 
+}
 
 img {
-    border: solid red 1px; 
+    max-width: 100%; 
+    display: block; 
+}
+
+/** .component **/
+
+.component img {
+    max-width: initial; 
+}
+
+.component_image {
+    border: solid #ccc 3px;
+    overflow-x: auto; 
+}
+
+.component_code {
+    border: solid blue 3px; 
+}
+
+.hero_code {
+    font-family: var(--font-sans-serif);
+    font-weight: 600;
+    font-size: 1.2rem; 
+    background: var(--pink); 
+    color: var(--white); 
+    line-height: 1.7; 
 }
