@@ -33,12 +33,13 @@ html {
       font-family: var(--font-sans-serif);
       color: white;    
       font-weight: 700;
-      background: orange; 
   }
 
   h1 {
       line-height: 1.2;
-      font-size: 3rem;  
+      font-size: 3rem;
+      background: var(--pink);
+
   }
 
   h2 {
@@ -53,6 +54,21 @@ h4 {
 
 .heading_black {
     color: black; 
+    font-size: 1.4rem; 
+}
+
+.background_black {
+    background: var(--darkgray);
+    padding: 30px; 
+}
+
+.background_blue {
+    background: var(--blue);
+    padding: 60px; 
+}
+
+.background_red {
+    background: Var(--red);
 }
 
 img {
@@ -67,12 +83,12 @@ img {
 }
 
 .component_image {
-    border: solid #ccc 3px;
+    border: solid orange 3px; 
     overflow-x: auto; 
 }
 
 .component_code {
-    border: solid blue 3px; 
+ 
 }
 
 .hero_code {
@@ -83,3 +99,74 @@ img {
     color: var(--white); 
     line-height: 1.7; 
 }
+
+/* Navbar container */
+.component_navbar {
+    overflow: hidden;
+    background-color: var(--white);
+  }
+  
+  /* Links inside the navbar */
+  .component_navbar a {
+    float: left;
+    font-size: 16px;
+    color: var(--darkgray);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 1.4rem;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    color: var(--darkgray);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a red color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    color: var(--red);
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: var(--darkgray);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a red color to dropdown links on hover */
+  .dropdown-content a:hover {
+    color: var(--red);
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
