@@ -31,7 +31,7 @@ html {
 
   h1, h2, h4 {
       font-family: var(--font-sans-serif);
-      color: white;    
+      /* color: var(--darkgray);  If this is on, the blue hover text in the main containers does not work for the heading i.e. Peru   */
       font-weight: 700;
   }
 
@@ -39,14 +39,14 @@ html {
       line-height: 1.2;
       font-size: 3rem;
       background: var(--pink);
-
+      color: var(--white);
   }
 
   h2 {
     line-height: 1;
     font-size: 1.75rem;  
 }
-
+/*dont need h3 later*/
 h3 {
     background: yellow; 
     padding: 10px; 
@@ -56,6 +56,10 @@ h3 {
 h4 {
     line-height: 1; 
     font-size: 2rem; 
+}
+
+a {
+  text-decoration: none; 
 }
 
 .heading_black {
@@ -213,3 +217,19 @@ img {
   .footer_tagline {
       padding: 10px; 
   }
+
+  /*Main Products*/
+
+  .card img {
+    max-width: 25%; 
+  }
+
+  .container {
+    border: rebeccapurple dotted 2px;  
+  }
+
+  .container h2:hover, a:hover {
+    color: var(--blue);
+  }
+
+
