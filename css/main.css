@@ -53,6 +53,7 @@ h3 {
     font-size: 2rem;
     font-weight: 700;
 }
+
 h4 {
     line-height: 1; 
     font-size: 2rem; 
@@ -62,24 +63,14 @@ a {
   text-decoration: none; 
 }
 
+ul {
+  list-style-type: none;
+}
+
 .heading_black {
     color: black; 
     font-size: 1.4rem; 
 }
-
-.background_black {
-    background: var(--darkgray);
-    padding: 30px; 
-}
-
-.background_blue {
-    background: var(--blue);
-    padding: 60px; 
-}
-
-/* .background_red {
-    background: Var(--red);
-} */
 
 img {
     max-width: 100%; 
@@ -97,12 +88,8 @@ img {
     overflow-x: auto; 
 }
 
-/* .component_code {
- 
-} */
 .hero {
     border: solid teal 3px;
-    
 }
 
 .hero_image img {
@@ -231,5 +218,26 @@ img {
   .container h2:hover, a:hover {
     color: var(--blue);
   }
+
+   /*Social*/
+   .component_social div {
+     border: solid 10px hotpink; 
+   }
+
+   .social--friends {
+     color: white;
+     background: var(--blue);
+     text-align: center;
+     padding: 15px;  
+   }
+
+   .social--love {
+     text-align: center; 
+   }
+
+   .social--icons a:hover {
+     color: var(--beige);
+
+   }
 
 
