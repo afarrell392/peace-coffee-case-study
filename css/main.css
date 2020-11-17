@@ -237,7 +237,14 @@ img {
 
    .social--icons a:hover {
      color: var(--beige);
+   }
 
+  .social_container {
+    border: red solid 3px;  
+  }
+
+   .social img {
+     width: 20%; 
    }
 
 
