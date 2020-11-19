@@ -137,6 +137,27 @@ img {
     padding: 14px 16px;
     text-decoration: none;
   }
+
+  /* navbar icons */
+.fa {
+  color: var(--white);
+}
+
+.icon-background--map {
+    color: var(--blue);
+  }
+
+.icon-background--user {
+    color: var(--brown);
+  }
+
+.icon-background--cart {
+    color: var(--red);
+  }
+
+  .icon-background--search {
+    color: var(--b);
+  }
   
   /* The dropdown container */
   .dropdown {
@@ -192,28 +213,37 @@ img {
     display: block;
   }
 
-  /*Footer*/
-  .footer {
-      background: var(--red);
-  }
-
-  .footer_logo img {
-    width: 200px; 
-  }
-
-  .footer_tagline {
-      padding: 10px; 
-  }
-
   /*Main Products*/
-
-  .card img {
-    max-width: 25%; 
+  .products-container {
+    border: solid green 5px;
+    max-width: 1300px;  
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto; 
+    gap: 10px;  
   }
 
-  .container {
-    border: rebeccapurple dotted 2px;  
+  .products-container img {
+    max-width: 75%; 
   }
+
+  .item1 {
+    border: solid blue 5px; 
+    display: grid;
+    align-items: center;  
+    justify-content: center; 
+  }
+
+  .item2 { 
+    border: solid blueviolet 5px; 
+  }
+
+  .item3 { 
+    border: solid darkcyan 5px; 
+  }
+
+
+
 
   .container h2:hover, a:hover {
     color: var(--blue);
@@ -247,4 +277,15 @@ img {
      width: 20%; 
    }
 
+/*Footer*/
+.footer {
+  background: var(--red);
+}
 
+.footer_logo img {
+width: 200px; 
+}
+
+.footer_tagline {
+  padding: 10px; 
+}
