@@ -17,68 +17,8 @@
 <body>
     <h1>Web Components</h1>
 
-    <!--HERO-->
-    <article class="component">
-        <h3 class="component_body">Hero</h3>
-        <div class="component_image">
-            <img srcset="img/hero_text.png 2x" src="img/hero_text.png" alt="hero copy" />
-            <img srcset="img/hero_button.png 2x" src="img/hero_button.png" alt="hero button" />
-            <img srcset="img/hero_image.png 2x" src="img/hero_image.png" alt="hero image" />
-        </div>
-
-        <div class="hero">
-            <div class="hero_image">
-                <img src="img/hero_image.png" alt="hero image" />
-            </div>
-
-            <div class="hero_code">
-                <p>It's been a week. With Daylight Savings Time messing up our schedules and the election still up in
-                    the
-                    air, we're ready for a few treats and a nice, big cup of coffee. Enter National Donut Day 2.0!! In
-                    honor
-                    of these delicious rings of comfort and joy, we're offering a treat of a deal all weekend long: 10%
-                    off
-                    + Free Shipping on orders $20+!</p>
-
-                <div class="hero_button">
-                    <p>Use Code 10FOR20 at Checkout!</p>
-                </div>
-            </div>
-        </div>
-
-
-
-
-    </article>
-
-    <!--HEADINGS-->
-
-    <article class="component">
-        <h3 class="component_headings">Headings (h1, h2, h4)</h3>
-        <div class="component_image">
-            <img srcset="img/hero_header.png 2x" src="img/hero_header.png" alt="h1" />
-            <img srcset="img/main_header.png 2x" src="img/main_header.png" alt="h2" />
-            <img srcset="img/main_headertree.png 2x" src="img/main_headertree.png" alt="h2" />
-            <img srcset="img/main_headerethiopia.png 2x" src="img/main_headerethiopia.png" alt="h2" />
-            <img srcset="img/footer_header.png 2x" src="img/footer_header.png" alt="h2" />
-            <img srcset="img/locations_header.png 2x" src="img/locations_header.png" alt="h4" />
-            <img srcset="img/social_header.png 2x" src="img/social_header.png" alt="h4" />
-            <img srcset="img/social_header2.png 2x" src="img/social_header2.png" alt="h4" />
-        </div>
-
-        <div class="component_code">
-            <h1>The Joy of Donuts &amp; Coffee</h1>
-            <h2>Peru</h2>
-            <h2>Tree Hugger</h2>
-            <h2>Ethiopia</h2>
-            <h2 class="background_red">Roasting fair trade, organic coffee in the heart of Minneapolis since 1996.</h2>
-            <h4 class="background_black">Find Peace Coffee</h4>
-
-        </div>
-    </article>
 
     <!--NAVBAR-->
-
     <article class="component">
         <h3>Nav Bar</h3>
         <div class="component_image">
@@ -145,19 +85,252 @@
 
             <div class="nav-icons">
                 <a href="#">
-                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <div class="icon--map">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    </div>
                 </a>
                 <a href="#">
-                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <div class="icon--user">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                    </div>
                 </a>
                 <a href="#">
-                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    <div class="icon--cart">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    </div>
                 </a>
                 <a href="#">
-                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <div class="icon--search">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </div>
                 </a>
             </div>
         </div>
+
+    </article>
+
+    <!--HERO-->
+    <article class="component">
+        <h3 class="component_body">Hero</h3>
+        <div class="component_image">
+            <img srcset="img/hero.png 2x" src="img/hero.png" alt="hero copy" />
+        </div>
+
+        <div class="hero">
+            <div class="hero_image">
+                <img src="img/hero_image.png" alt="hero image" />
+            </div>
+
+            <div class="hero_code">
+                <h1>The Joy of Donuts &amp; Coffee</h1>
+                <p>It's been a week. With Daylight Savings Time messing up our schedules and the election still up in
+                    the
+                    air, we're ready for a few treats and a nice, big cup of coffee. Enter National Donut Day 2.0!! In
+                    honor
+                    of these delicious rings of comfort and joy, we're offering a treat of a deal all weekend long: 10%
+                    off
+                    + Free Shipping on orders $20+!</p>
+
+                <div class="hero_button">
+                    <p>Use Code 10FOR20 at Checkout!</p>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!--MAIN PRODUCTS-->
+    <article class="component">
+        <div class="component_main">
+            <h3 class="component_main">Main</h3>
+            <div class="component_main">
+                <img srcset="img/main.png 2x" src="img/main.png" alt="main" />
+            </div>
+        </div>
+        <div class="main_products--Peru">
+            <div class="card">
+                <img src="img/main_box_image.png" alt="coffee bag" />
+            </div>
+
+            <div class="container">
+                <a href="#">
+                    <h2 class="product_header">Peru</h2>
+                    <p class="product_notes">Sweet &amp; Smooth</p>
+                    <p class="product_price">$12 - $64</p>
+                </a>
+            </div>
+        </div>
+        <div class="main_products--tree">
+            <div class="card">
+                <img src="img/main_box_tree.png" alt="coffee bag" />
+            </div>
+
+            <div class="container">
+                <a href="#">
+                    <h2 class="product_header">Tree Hugger</h2>
+                    <p class="product_notes">Nutty &amp; Adventurous</p>
+                    <p class="product_price">$12 - $64</p>
+                </a>
+            </div>
+
+            <div class="main_products--ethiopia">
+                <div class="card">
+                    <img src="img/main_box_image.png" alt="coffee bag" />
+                </div>
+
+                <div class="container">
+                    <a href="#">
+                        <h2 class="product_header">Ethiopia</h2>
+                        <p class="product_notes">Vibrant &amp; Citrusy</p>
+                        <p class="product_price">$12 - $64</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!--LOCATIONS-->
+    <article class="component">
+        <div class="component_locations">
+            <h3 class="component_locations">Locations</h3>
+            <div class="component_locations">
+                <img srcset="img/locations.png 2x" src="img/locations.png" alt="locations" />
+            </div>
+        </div>
+
+        <div class="locations_container">
+            <!--header-->
+            <div class="locations_header">
+                <h4>Find Peace Coffee</h4>
+            </div>
+
+            <!--zip code form-->
+            <div class="locations_form">
+                <form>
+                    <input type="number" name="zip">
+                </form>
+            </div>
+            <!--zip code button-->
+            <div class="locations_button">
+                <button>Go</button>
+            </div>
+            <!--description-->
+            <div>
+                <p>Thanks to the hard work of our roasting, packaging, &amp; delivery team and the food distribution
+                    workers
+                    across the country, we are still available at independent grocers, major retailers, &amp; select
+                    to-go
+                    locations!</p>
+            </div>
+            <!--logos-->
+            <div class="locations_logos">
+                <img src="img/locations_logo_target.png" alt="target logo" />
+            </div>
+            <div class="locations_logos">
+                <img src="img/locations_logo_cub.png" alt="cub logo" />
+            </div>
+            <div class="locations_logos">
+                <img src="img/locations_logo_hyvee.png" alt="locations_logo_hyvee logo" />
+            </div>
+            <div class="locations_logos">
+                <img src="img/locations_logo_coop.png" alt="target logo" />
+            </div>
+
+        </div>
+
+    </article>
+
+    <!--REVIEWS-->
+    <article class="component">
+        <div class="component_reviews">
+            <h3 class="component_reviews">Reviews</h3>
+            <div class="component_reviews">
+                <img srcset="img/reviews.png 2x" src="img/reviews.png" alt="reviews" />
+            </div>
+        </div>
+
+        <div class="review">
+            <div class="review_container1">
+                <div class="review_img">
+                    <img src="img/heart.png" alt="heart">
+                </div>
+                <div class="review_text">
+                    <p>Peace Coffee is SO amazingly tasty, it has ruined all other coffee for me. Congratulaions on
+                        making a
+                        superior product, and sharing it with us!!!!!</p>
+                </div>
+                <div>
+                    <p>- Jacquelyn D.</p>
+                </div>
+            </div>
+            <div class="review_container2">
+                <div class="review_img">
+                    <img src="img/heart.png" alt="heart">
+                </div>
+                <div class="review_text">
+                    <p>Best coffee on the planet hands down!</p>
+                </div>
+                <div>
+                    <p>- Scott D.</p>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!--SOCIAL-->
+    <article class="component">
+        <div class="component_social">
+            <h3 class="component_social">Social</h3>
+            <div class="component_social">
+                <img srcset="img/social.png 2x" src="img/social.png" alt="social" />
+            </div>
+        </div>
+
+        <!--Blue "let's be friends" section-->
+        <div class="social--friends">
+            <h4>Let's be friends.</h4>
+        </div>
+
+        <!--"love coffee with us" section-->
+        <div class="social--love">
+            <h4>Love coffee with us!</h4>
+        </div>
+
+        <!--"love coffee" social links-->
+        <div class="social--icons">
+            <ul>
+                <li class="list_facbook">
+                    <a href="#">
+                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="list_twitter">
+                    <a href="#">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="list_instagram">
+                    <a href="#">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!--instagram feed-->
+        <div class="social_container">
+            <div class="social">
+                <img src="img/social_insta_1.png" alt="social" />
+            </div>
+            <div class="social">
+                <img src="img/social_insta_2.png" alt="social" />
+            </div>
+            <div class="social">
+                <img src="img/social_insta_3.png" alt="social" />
+            </div>
+            <div class="social">
+                <img src="img/social_insta_4.png" alt="social" />
+            </div>
+        </div>
+
 
     </article>
 
@@ -275,113 +448,6 @@
         </div>
     </article>
 
-    <!--MAIN PRODUCTS-->
-    <article class="component">
-        <div class="component_main">
-            <h3 class="component_main">Main</h3>
-            <div class="component_main">
-                <img srcset="img/main.png 2x" src="img/main.png" alt="main" />
-            </div>
-        </div>
-        <div class="main_products--Peru">
-            <div class="card">
-                <img src="img/main_box_image.png" alt="coffee bag" />
-            </div>
-
-            <div class="container">
-                <a href="#">
-                    <h2 class="product_header">Peru</h2>
-                    <p class="product_notes">Sweet &amp; Smooth</p>
-                    <p class="product_price">$12 - $64</p>
-                </a>
-            </div>
-        </div>
-        <div class="main_products--tree">
-            <div class="card">
-                <img src="img/main_box_tree.png" alt="coffee bag" />
-            </div>
-
-            <div class="container">
-                <a href="#">
-                    <h2 class="product_header">Tree Hugger</h2>
-                    <p class="product_notes">Nutty &amp; Adventurous</p>
-                    <p class="product_price">$12 - $64</p>
-                </a>
-            </div>
-
-            <div class="main_products--ethiopia">
-                <div class="card">
-                    <img src="img/main_box_image.png" alt="coffee bag" />
-                </div>
-
-                <div class="container">
-                    <a href="#">
-                        <h2 class="product_header">Ethiopia</h2>
-                        <p class="product_notes">Vibrant &amp; Citrusy</p>
-                        <p class="product_price">$12 - $64</p>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </article>
-
-    <!--SOCIAL-->
-    <article class="component">
-        <div class="component_social">
-            <h3 class="component_social">Social</h3>
-            <div class="component_social">
-                <img srcset="img/social.png 2x" src="img/social.png" alt="social" />
-            </div>
-        </div>
-
-        <!--Blue "let's be friends" section-->
-        <div class="social--friends">
-            <h4>Let's be friends.</h4>
-        </div>
-
-        <!--"love coffee with us" section-->
-        <div class="social--love">
-            <h4>Love coffee with us!</h4>
-        </div>
-
-        <!--"love coffee" social links-->
-        <div class="social--icons">
-            <ul>
-                <li class="list_facbook">
-                    <a href="#">
-                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                    </a>
-                </li>
-                <li class="list_twitter">
-                    <a href="#">
-                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                    </a>
-                </li>
-                <li class="list_instagram">
-                    <a href="#">
-                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <!--instagram feed-->
-        <div class="social_container">
-            <div class="social">
-                <img src="img/social_insta_1.png" alt="social" />
-            </div>
-            <div class="social">
-                <img src="img/social_insta_2.png" alt="social" />
-            </div>
-            <div class="social">
-                <img src="img/social_insta_3.png" alt="social" />
-            </div>
-            <div class="social">
-                <img src="img/social_insta_4.png" alt="social" />
-            </div>
-        </div>
-
-
-    </article>
 
 </body>
 
