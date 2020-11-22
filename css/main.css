@@ -67,10 +67,10 @@ ul {
   list-style-type: none;
 }
 
-img {
+/* img {
     max-width: 100%; 
     display: block; 
-}
+} */
 
 /** .component **/
 
@@ -110,12 +110,18 @@ img {
 
 /** hero **/
 .hero {
-  display: grid; 
+  display: flex;
+
 }
 
 .hero_image img {
-    max-width: 50%;
+    max-width: 100%;
+    max-height: 100;
 } 
+
+.hero_image {
+  flex: 50%; 
+}
 
 .hero_code {
     font-family: var(--font-sans-serif);
@@ -124,10 +130,10 @@ img {
     background: var(--pink); 
     color: var(--white); 
     line-height: 1.7;
-    max-width: 50%; 
     padding: 20px;  
     margin-bottom: 10px;
-}
+    flex: 50%;  
+  }
 
 .hero_button {
     background: var(--pink);
@@ -266,6 +272,107 @@ img {
 .text-container:hover {
     color: var(--blue);
   }
+
+/*Location*/
+.locations_container {
+  background-color: var(--darkgray);
+  width: 100%;
+  padding: 15px; 
+  margin-right: auto;
+  margin-left: auto; 
+  text-align: center; 
+}
+
+.locations_container h4 {
+  color: var(--white);
+  font-weight: 800; 
+}
+
+.locations_container p { 
+color: var(--ltgray);
+font-weight: 700;
+line-height: 1.7rem; 
+}
+
+.locations_form {
+  padding: 4px 12px 5px; 
+}
+
+.locations_form input {
+  border-radius: 5px;
+  width: 120px; 
+  padding: 8px; 
+  font-weight: 700;
+}
+
+.locations_button button {
+  border-radius: 5px;
+  padding: 8px; 
+  background-color: var(--blue);
+  color: var(--white);
+  font-weight: 700; 
+  width: 50px;  
+}
+
+.button_container {
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+}
+
+.logos_container {
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+}
+
+.logos_container img {
+  max-width: 70%;  
+}
+
+/*Review*/
+.review {
+  border: solid saddlebrown 5px; 
+  display: flex; 
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  color: var(--darkgray);
+  font-weight: 700;  
+  font-size: 0.75rem; 
+  line-height: 1.7; 
+}
+
+.signature {
+color: var(--dkgray);
+font-size: 0.64rem; 
+font-style: italic;
+display: flex; 
+
+}
+
+.review img {
+  margin: 18px;
+  width: 60px;
+  height: 60px;
+ 
+}
+
+.review_container1 {
+  display: flex; 
+  flex: 0 0 50%;
+  max-width: 50%;
+  margin: 5px; 
+}
+
+.review_container2 {
+  display: flex; 
+  flex: 0 0 50%;
+  max-width: 50%;
+  margin: 5px;
+}
 
    /*Social*/
    .component_social div {
