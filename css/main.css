@@ -31,7 +31,7 @@ html {
 
   h1, h2, h4 {
       font-family: var(--font-sans-serif);
-      /* color: var(--darkgray); If this is on, the blue hover text in the main containers does not work for the heading i.e. Peru     */
+      /* color: var(--darkgray);     */
       font-weight: 700;
   }
 
@@ -115,18 +115,14 @@ li {
 
 /** hero **/
 .hero {
-  display: flex;
-
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: palegreen solid 2px;
 }
 
 .hero_image img {
-    max-width: 100%;
-    max-height: 100;
+    width: 100%; 
 } 
-
-.hero_image {
-  flex: 50%; 
-}
 
 .hero_code {
     font-family: var(--font-sans-serif);
@@ -135,22 +131,20 @@ li {
     background: var(--pink); 
     color: var(--white); 
     line-height: 1.7;
-    padding: 20px;  
-    margin-bottom: 10px;
-    flex: 50%;  
+    padding: 20px;   
   }
 
-.hero_button {
-    background: var(--pink);
+button {   
+  background: var(--pink);
     border: solid var(--white) 2px; 
     border-radius: 8px;
     color: white; 
-    padding: 0 20px 0 20px; 
+    padding: 15px; 
+    margin: 20px; 
     text-align: center; 
     text-decoration: none;
-    display: inline-block;
     font-size: 1.2rem;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 /* Navbar container */
@@ -247,9 +241,12 @@ li {
   /*Main Products*/
 .products-container {
   display: flex; 
-  flex-wrap: wrap; 
   align-content: center;
   max-width: 1300px;
+}
+
+.products-container a {
+  color: var(--darkgray);
 }
 
 .products-container a:hover {
@@ -264,7 +261,7 @@ li {
 }
 
   .text-container img { 
-    width: 40%; 
+    width: 50%; 
   }
 
   .price {
