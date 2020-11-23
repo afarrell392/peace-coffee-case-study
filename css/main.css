@@ -31,7 +31,7 @@ html {
 
   h1, h2, h4 {
       font-family: var(--font-sans-serif);
-      /* color: var(--darkgray);  If this is on, the blue hover text in the main containers does not work for the heading i.e. Peru   */
+      /* color: var(--darkgray); If this is on, the blue hover text in the main containers does not work for the heading i.e. Peru     */
       font-weight: 700;
   }
 
@@ -44,7 +44,7 @@ html {
 
   h2 {
     line-height: 1;
-    font-size: 1.75rem;  
+    font-size: 1.75rem; 
 }
 /*dont need h3 later*/
 h3 {
@@ -61,10 +61,15 @@ h4 {
 
 a {
   text-decoration: none; 
+  color: var(--darkgray); 
 }
 
 ul {
   list-style-type: none;
+}
+
+li {
+  color:var(--darkgray);
 }
 
 /* img {
@@ -241,37 +246,32 @@ ul {
 
   /*Main Products*/
 .products-container {
+  display: flex; 
+  flex-wrap: wrap; 
+  align-content: center;
   max-width: 1300px;
 }
 
-.products-container p, h2 {
-  color: var(--darkgray);
-  font-weight: 700;
+.products-container a:hover {
+  color: var(--blue) !important; 
 }
 
-.products-image-container img {
-    max-width: 58%; 
+.text-container {  
+  display: flex;  
+  flex-wrap: wrap; 
+  text-align: center; 
+  line-height: 0.9rem;
+}
+
+  .text-container img { 
+    width: 40%; 
   }
 
-  .products-image-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto; 
-    gap: 10px; 
-  }
+  .price {
+    font-size: 1.3rem; 
+  } 
 
-  .text-container {  
-    border: 2px orange solid; 
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto; 
-    gap: 10px;
-    text-align: center;  
-  }
-
-.text-container:hover {
-    color: var(--blue);
-  }
+ 
 
 /*Location*/
 .locations_container {
@@ -333,6 +333,8 @@ line-height: 1.7rem;
 /*Review*/
 .review {
   display: flex; 
+  align-content: center; 
+  justify-content: center; 
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -349,14 +351,12 @@ color: var(--dkgray);
 font-size: 0.64rem; 
 font-style: italic;
 display: flex; 
-
 }
 
 .review img {
   margin: 18px;
   width: 60px;
   height: 60px;
- 
 }
 
 .review_container1 {
@@ -364,6 +364,8 @@ display: flex;
   flex: 0 0 50%;
   max-width: 50%;
   margin: 5px; 
+  align-content: center; 
+  justify-content: center; 
 }
 
 .review_container2 {
@@ -371,12 +373,11 @@ display: flex;
   flex: 0 0 50%;
   max-width: 50%;
   margin: 5px;
+  align-content: center; 
+  justify-content: center; 
 }
 
-   /*Social*/
-   .component_social div {
-     border: solid 10px hotpink; 
-   }
+/*Social*/
 
    .social--friends {
      color: white;
@@ -389,11 +390,15 @@ display: flex;
      text-align: center;
    }
 
-   .love--container {
-    border: red solid 3px; 
-   } 
-   .social--icons a:hover {
-     color: var(--beige);
+   .social--icons {
+    display: flex;
+    justify-content: center;
+   }
+
+   .social--icons .fa {
+    color: var(--darkgray);
+    font-size: 1.7rem;
+    padding: 20px; 
    }
 
   .social_container {
@@ -407,13 +412,93 @@ display: flex;
 
 /*Footer*/
 .footer {
-  background: var(--red);
+  background: var(--red);  
+}
+
+.footer_tagline {
+  display: flex; 
+  align-content: center; 
+  justify-content: center;
+  color: white; 
+  padding-top: 10px; 
+}
+
+.links_container {
+  display: flex; 
+  align-content: center; 
+  justify-content: center;
+  padding: 80px; 
+  padding-top: 10px; 
+  line-height: 2.0rem; 
+  font-weight: 700; 
+  font-size: 0.8rem;
+}
+
+.list_header {
+  font-weight: 900; 
+}
+
+a {
+  color: white; 
+}
+
+.group { 
+  display: flex; 
+  flex: 0 0 25%;
+  max-width: 25%;
+  color: white; 
+}
+  
+.footer_logo {
+  display: flex; 
+  align-content: center; 
+  justify-content: center;
+  padding-bottom:20px; 
 }
 
 .footer_logo img {
 width: 200px; 
 }
 
-.footer_tagline {
-  padding: 10px; 
+.customer-service {
+  margin: 40px; 
+  color: white; 
 }
+
+.service-h6 {
+  font-weight: 800;
+  font-size: 1.0rem; 
+}
+
+.white {
+  color: white; 
+  text-decoration: underline;
+}
+
+.footer_social--icons {
+  display: flex;
+  justify-content: left; 
+}
+.footer_social--icons .fa {
+  margin-left: 40px; 
+  padding: 10px; 
+  font-size: 1.5rem; 
+}
+
+/* .footer_customerservice {
+  border: black solid 3px; 
+  display: flex;  
+} */
+
+.bcorp img {
+  max-width: 70%; 
+}
+
+.footer_copyright {
+  display: flex; 
+  justify-content: center;
+  color: white; 
+  font-size: 0.8rem; 
+  font-weight: 700; 
+}
+
