@@ -332,7 +332,6 @@ line-height: 1.7rem;
 
 /*Review*/
 .review {
-  border: solid saddlebrown 5px; 
   display: flex; 
   width: 100%;
   padding-right: 15px;
@@ -387,19 +386,23 @@ display: flex;
    }
 
    .social--love {
-     text-align: center; 
+     text-align: center;
    }
 
+   .love--container {
+    border: red solid 3px; 
+   } 
    .social--icons a:hover {
      color: var(--beige);
    }
 
   .social_container {
-    border: red solid 3px;  
+    display: flex; 
   }
 
    .social img {
-     width: 20%; 
+     max-width: 100%; 
+     display: flex; 
    }
 
 /*Footer*/
