@@ -26,8 +26,7 @@ html {
   body {
       font-family: var(--font-sans-serif);
       color: var(--darkgray);
-      margin: 20px; 
-  }
+      }
 
   h1, h2, h4 {
       font-family: var(--font-sans-serif);
@@ -114,10 +113,10 @@ li {
 }
 
 /** hero **/
-.hero {
+/* .hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  border: palegreen solid 2px;
+  margin-top: 130px;
 }
 
 .hero_image img {
@@ -132,7 +131,27 @@ li {
     color: var(--white); 
     line-height: 1.7;
     padding: 20px;   
+  } */
+
+  .hero {
+    display: flex;
+    margin-top: 130px;
   }
+  
+  .hero_image img {
+      width: 100%; 
+      height: 100%; 
+  } 
+  
+  .hero_code {
+      font-family: var(--font-sans-serif);
+      font-weight: 600;
+      font-size: 1.2rem; 
+      background: var(--pink); 
+      color: var(--white); 
+      line-height: 1.7;
+      padding: 20px;   
+    }
 
 button {   
   background: var(--pink);
@@ -151,6 +170,9 @@ button {
 .component_navbar {
     overflow: hidden;
     background-color: var(--white);
+    position: fixed;
+    top: 0px;
+    display: flex; 
   }
   
   /* Links inside the navbar */
@@ -267,8 +289,6 @@ button {
   .price {
     font-size: 1.3rem; 
   } 
-
- 
 
 /*Location*/
 .locations_container {
@@ -454,7 +474,8 @@ a {
 }
 
 .footer_logo img {
-width: 200px; 
+  width: 200px; 
+  height: 190px; 
 }
 
 .customer-service {
@@ -472,6 +493,9 @@ width: 200px;
   text-decoration: underline;
 }
 
+.footer_customerservice {
+  display: flex;  
+}
 .footer_social--icons {
   display: flex;
   justify-content: left; 
@@ -482,13 +506,11 @@ width: 200px;
   font-size: 1.5rem; 
 }
 
-/* .footer_customerservice {
-  border: black solid 3px; 
-  display: flex;  
-} */
-
 .bcorp img {
-  max-width: 70%; 
+  width: 95px;
+  height: 125px;
+  display: flex; 
+  align-content: flex-end;
 }
 
 .footer_copyright {
