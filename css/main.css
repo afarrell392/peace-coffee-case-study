@@ -114,6 +114,7 @@ li {
   .hero {
     display: flex;
     margin-top: 130px;
+
   }
   
   .hero_image img {
@@ -121,14 +122,18 @@ li {
       height: 100%; 
   } 
   
-  .hero_code {
+  .hero_container {
       font-family: var(--font-sans-serif);
       font-weight: 600;
       font-size: 1.2rem; 
       background: var(--pink); 
       color: var(--white); 
       line-height: 1.7;
-      padding: 20px;   
+      padding: 20px; 
+    }
+
+    .hero_text {
+      margin-right: 20px; 
     }
 
 button {   
@@ -149,15 +154,16 @@ button {
     /* overflow: hidden; */
     background-color: var(--white);
     width: auto; 
-    position: fixed;     /*this and the "top" css fix the navbar to the top of the screen when scrolling*/
+    position: fixed;     /*this and the "top/left" css fix the navbar to the top of the screen when scrolling*/
     top: 0px;
+    left:0; 
+    z-index: 10; 
     display: flex; 
     width: 100%;
   }
 
   .navbar_left {
     display: flex;
-     
   }
   
   /* Links inside the navbar */
@@ -172,13 +178,10 @@ button {
   /* navbar icons container */
 .nav-icons {
 padding: 14px;   
-display: flex;
-margin-top: 25px; 
-
+margin-top: 10px;
 }
 
 /* navbar icons */
-
 .fa {
   color: var(--white);
 }
@@ -206,7 +209,7 @@ margin-top: 25px;
   }
 
   .dropdown_container {
-    margin-top: 25px; 
+    margin-top: 10px; 
   }
 
   /* Dropdown button */
