@@ -146,7 +146,7 @@ button {
 
 /* Navbar container */
 .component_navbar {
-    overflow: hidden;
+    /* overflow: hidden; */
     background-color: var(--white);
     position: fixed;     /*this and the "top" css fix the navbar to the top of the screen when scrolling*/
     top: 0px;
@@ -160,15 +160,13 @@ button {
     color: var(--darkgray);
     text-align: center;
     text-decoration: none;
-  
   }
 
   /* navbar icons */
 .nav-icons {
 border: 2px black solid; 
 padding: 14px;   
-float: right; 
-
+float: right;
 }
 
 .fa {
@@ -195,6 +193,10 @@ float: right;
   .dropdown {
     float: left;
     overflow: hidden;
+  }
+
+  .dropdown_container {
+    margin-top: 25px; 
   }
 
   /* Dropdown button */
@@ -250,6 +252,7 @@ float: right;
   display: flex; 
   align-content: center;
   max-width: 1300px;
+  padding: 15px; 
 }
 
 .products-container a {
