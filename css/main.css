@@ -262,10 +262,10 @@ margin-top: 10px;
 
   /*Main Products*/
 .products-container {
+  border: green 2px solid; 
   display: flex; 
   align-content: center;
   justify-content: center;
-  max-width: 1300px;
   padding: 15px; 
 }
 
