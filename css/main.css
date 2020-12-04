@@ -16,6 +16,7 @@
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
     box-sizing: border-box;
+    margin: 0px; 
   }
   *, *:before, *:after {
     box-sizing: inherit;
@@ -26,6 +27,7 @@ html {
   body {
       font-family: var(--font-sans-serif);
       color: var(--darkgray);
+  
       }
 
   h1, h2, h4 {
@@ -107,32 +109,8 @@ li {
   color: var(--pink);
 }
 
-.main {
-  margin-left: 200px; /* Same as the width of the sidebar */
-  padding: 0px 5px;
-}
 
 /** hero **/
-/* .hero {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-top: 130px;
-}
-
-.hero_image img {
-    width: 100%; 
-} 
-
-.hero_code {
-    font-family: var(--font-sans-serif);
-    font-weight: 600;
-    font-size: 1.2rem; 
-    background: var(--pink); 
-    color: var(--white); 
-    line-height: 1.7;
-    padding: 20px;   
-  } */
-
   .hero {
     display: flex;
     margin-top: 130px;
@@ -170,7 +148,7 @@ button {
 .component_navbar {
     overflow: hidden;
     background-color: var(--white);
-    position: fixed;
+    position: fixed;     /*this and the "top" css fix the navbar to the top of the screen when scrolling*/
     top: 0px;
     display: flex; 
   }
@@ -181,11 +159,18 @@ button {
     font-size: 16px;
     color: var(--darkgray);
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
+  
   }
 
   /* navbar icons */
+.nav-icons {
+border: 2px black solid; 
+padding: 14px;   
+float: right; 
+
+}
+
 .fa {
   color: var(--white);
 }
@@ -202,7 +187,7 @@ button {
     color: var(--red);
   }
 
-  .icon-background--search {
+.icon-background--search {
     color: var(--b);
   }
   
@@ -449,6 +434,10 @@ display: flex;
   line-height: 2.0rem; 
   font-weight: 700; 
   font-size: 0.8rem;
+}
+
+.links_container a:hover {
+  color: black; 
 }
 
 .list_header {
