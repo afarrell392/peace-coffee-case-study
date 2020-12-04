@@ -148,9 +148,11 @@ button {
 .navbar {
     /* overflow: hidden; */
     background-color: var(--white);
+    width: auto; 
     position: fixed;     /*this and the "top" css fix the navbar to the top of the screen when scrolling*/
     top: 0px;
     display: flex; 
+    width: 100%;
   }
 
   .navbar_left {
@@ -172,6 +174,7 @@ button {
 padding: 14px;   
 display: flex;
 margin-top: 25px; 
+
 }
 
 /* navbar icons */
