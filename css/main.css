@@ -145,16 +145,21 @@ button {
 }
 
 /* Navbar container */
-.component_navbar {
+.navbar {
     /* overflow: hidden; */
     background-color: var(--white);
     position: fixed;     /*this and the "top" css fix the navbar to the top of the screen when scrolling*/
     top: 0px;
     display: flex; 
   }
+
+  .navbar_left {
+    display: flex;
+     
+  }
   
   /* Links inside the navbar */
-  .component_navbar a {
+.navbar a {
     float: left;
     font-size: 16px;
     color: var(--darkgray);
@@ -162,12 +167,14 @@ button {
     text-decoration: none;
   }
 
-  /* navbar icons */
+  /* navbar icons container */
 .nav-icons {
-border: 2px black solid; 
 padding: 14px;   
-float: right;
+display: flex;
+margin-top: 25px; 
 }
+
+/* navbar icons */
 
 .fa {
   color: var(--white);
@@ -251,6 +258,7 @@ float: right;
 .products-container {
   display: flex; 
   align-content: center;
+  justify-content: center;
   max-width: 1300px;
   padding: 15px; 
 }
