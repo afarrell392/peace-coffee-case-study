@@ -481,7 +481,7 @@ a {
 
 .footer_logo img {
   width: 200px; 
-  height: 190px; 
+  height: 185px; 
 }
 
 .customer-service {
@@ -491,7 +491,7 @@ a {
 
 .service-h6 {
   font-weight: 800;
-  font-size: 1.0rem; 
+  font-size: 1.0rem;  
 }
 
 .white {
@@ -512,11 +512,17 @@ a {
   font-size: 1.5rem; 
 }
 
+.bcorp {
+  position: absolute;
+  right: 0; 
+  margin-right: 20px; 
+
+}
+
 .bcorp img {
   width: 95px;
   height: 125px;
-  display: flex; 
-  align-content: flex-end;
+
 }
 
 .footer_copyright {
