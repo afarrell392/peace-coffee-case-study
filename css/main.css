@@ -112,8 +112,9 @@ li {
 
 /** hero **/
   .hero {
-    display: flex;
-    margin-top: 130px;
+    display: flex; 
+    margin-top: 100px;
+    border: red 4px solid; 
   }
 
   .hero_image {
@@ -121,25 +122,25 @@ li {
   }
   
   .hero_image img {
-    max-width: 900px; 
-    max-height: 600px;
+    width: 100%; 
+    height: auto; 
   } 
   
-  .hero_container {
-    border: solid 3px red; 
-      font-family: var(--font-sans-serif);
-      font-weight: 600;
-      font-size: 1.2rem; 
-      background: var(--pink); 
-      color: var(--white); 
-      line-height: 1.7;
-      padding: 20px; 
-      max-height: 600px; 
-    }
+.hero_container {
+  display: flex; 
+  flex-wrap: wrap;
+  font-family: var(--font-sans-serif);
+  font-weight: 600;
+  font-size: 1.2rem; 
+  background: var(--pink); 
+  color: var(--white); 
+  line-height: 1.7;
+  padding: 20px;  
+}
 
-    .hero_text {
-      margin-right: 20px; 
-    }
+.hero_text {
+    margin-right: 20px;
+  }
 
 .hero_button {    
   background: var(--pink);
@@ -408,7 +409,7 @@ display: flex;
      color: white;
      background: var(--blue);
      text-align: center;
-     padding: 15px;  
+     padding: 10px;  
    }
 
    .social--love {
@@ -418,6 +419,7 @@ display: flex;
    .social--icons {
     display: flex;
     justify-content: center;
+    padding: 15px; 
    }
 
    .social--icons .fa {
@@ -425,6 +427,11 @@ display: flex;
     font-size: 1.7rem;
     padding: 20px; 
    }
+
+   .social--icons .fa:hover {
+    border-radius: 50%; 
+    background: var(--beige); 
+  }
 
   .social_container {
     display: flex; 
@@ -508,6 +515,7 @@ a {
 .footer_customerservice {
   display: flex;  
 }
+
 .footer_social--icons {
   display: flex;
   justify-content: left; 
@@ -517,6 +525,12 @@ a {
   margin-left: 40px; 
   padding: 10px; 
   font-size: 1.5rem; 
+}
+
+.footer_social--icons .fa:hover {
+  border: 1px black solid; 
+  border-radius: 50%; 
+  background: var(--black); 
 }
 
 .bcorp {
