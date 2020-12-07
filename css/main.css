@@ -111,14 +111,10 @@ li {
 
 /** hero **/
 .hero_container {
-  display: flex; 
+  display: flex;
   margin-top: 100px;
   width: 100%; 
   height: auto; 
-}
-
-.hero_image {
-  display: flex;
 }
   
 .hero_image img {
@@ -129,6 +125,10 @@ li {
 .hero_container--text {
   display: flex;
   flex-wrap: wrap; 
+}
+
+.hero_text {
+  margin-right: 20px;
   font-family: var(--font-sans-serif);
   font-weight: 600;
   font-size: 1.2rem; 
@@ -136,10 +136,6 @@ li {
   color: var(--white); 
   line-height: 1.7;
   padding: 20px;
-}
-
-.hero_text {
-  margin-right: 20px;
   }
 
 .hero_button {    
